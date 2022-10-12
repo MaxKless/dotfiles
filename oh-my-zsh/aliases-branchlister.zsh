@@ -1,0 +1,11 @@
+bldir="$(dirname "$ZSH_CUSTOM")/branchlister"
+alias bl='bash $bldir/branchlister.sh'
+alias bb='bash $bldir/branchpicker.sh'
+alias bb1='bash $bldir/branchpicker.sh 1'
+alias bb2='bash $bldir/branchpicker.sh 2'
+alias bb3='bash $bldir/branchpicker.sh 3'
+alias bb4='bash $bldir/branchpicker.sh 4'
+alias bb5='bash $bldir/branchpicker.sh 5'
+alias bb6='bash $bldir/branchpicker.sh 6'
+alias bb7='bash $bldir/branchpicker.sh 7'
+alias bb8='bash $bldir/branchpicker.sh 8'
