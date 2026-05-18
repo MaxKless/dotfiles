@@ -7,9 +7,5 @@
 	editor = code-insiders --wait
 [url "https://github.com/"]
 	insteadOf = git@github.com:
-[credential "https://gist.github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
-[credential "https://github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+# Credential helper intentionally omitted — run `gh auth setup-git` on a new
+# machine and gh will add the [credential] blocks itself.

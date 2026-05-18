@@ -26,7 +26,7 @@ existing files) and seeds `~/.npmrc` from the template.
 | `.zshrc` | oh-my-zsh + `mise activate` + PATH |
 | `.zprofile` | Homebrew env |
 | `.zshenv` / `.profile` | source `~/.cargo/env` if present |
-| `.gitconfig` | user, GPG signing key, `gh` credential helper |
+| `.gitconfig` | user, GPG signing key, github HTTPS rewrite (run `gh auth setup-git` for credentials) |
 | `.yarnrc.yml` | yarn registry config |
 | `.npmrc.template` | npm config — copy to `~/.npmrc`, supply `NPM_TOKEN` via env |
 | `oh-my-zsh/aliases-*.zsh` | git / nx / branchlister / misc aliases (auto-loaded via `ZSH_CUSTOM`) |
