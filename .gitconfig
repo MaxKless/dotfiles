@@ -2,9 +2,17 @@
 [user]
 	name = Max Kless
 	email = maxk@nrwl.io
-	signingkey = A9018C6DF79245BA
+	# SSH commit signing backed by a YubiKey FIDO2 key — see SETUP.md.
+	# This .pub file won't exist until you generate the key; signed
+	# commits (the `gcsm` alias / `git commit -S`) will error until then.
+	# Plain `git commit` is unaffected — signing is opt-in, not global.
+	signingkey = ~/.ssh/id_ed25519_sk.pub
 [core]
 	editor = code-insiders --wait
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers
 [url "https://github.com/"]
 	insteadOf = git@github.com:
 # Credential helper intentionally omitted — run `gh auth setup-git` on a new
