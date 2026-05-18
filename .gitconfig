@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Max Kless
+	email = maxk@nrwl.io
+	signingkey = A9018C6DF79245BA
+[core]
+	editor = code-insiders --wait
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential

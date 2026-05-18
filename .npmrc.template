@@ -1,0 +1,8 @@
+# Copy this to ~/.npmrc — do NOT commit the real file (it holds secrets).
+#
+# npm expands ${VARS} from the environment, so keep the token in your shell
+# env / keychain rather than hard-coding it here:
+#
+#   export NPM_TOKEN=npm_xxxxxxxxxxxxxxxxxxxx
+#
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
